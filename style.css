@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    padding: 100px 0;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+section {
+    margin: 40px 0;
+}
+
+.card {
+    border: none;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+}
+.custom-card-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.counter {
+    text-align: center;
+}
+
+.count {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 5px 0;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #3498db; /* You can customize the background color */
+    color: #fff; /* You can customize the text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*h2 {
+    font-size: 18px;
+}*/
+/* Add your custom styles here */
+.about-text {
+    padding: 20px;
+}
+/* Add your custom styles here */
+
+.about-text {
+    padding: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #333; /* Change color as needed */
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change hover color as needed */
+}
+.carousel-item img{
+    height: 400px;
+}
+  .custom-card-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+/*            border-radius: 50%;*/
+            margin-bottom: 15px;
+        }
