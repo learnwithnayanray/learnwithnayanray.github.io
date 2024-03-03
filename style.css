@@ -3,6 +3,29 @@ body {
     background-color: #f8f9fa;
 }
 
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  border-right: 2px solid black; /* Cursor style effect */
+  white-space: nowrap; /* Prevent text wrap */
+  overflow: hidden; /* Hide overflow */
+  animation: auto-write 4s steps(40) infinite; /* Animation */
+}
+
+/* Keyframe animation */
+@keyframes auto-write {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
 .navbar {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -11,19 +34,87 @@ body {
 header {
     padding: 100px 0;
     color: #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/1.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     background-size: cover;
     background-position: center;
 }
+#slider {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+}
+
 
 header h1 {
     margin-bottom: 20px;
     font-size: 2.5em;
 }
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  border-right: 2px solid transparent; /* Cursor style effect */
+  white-space: nowrap; /* Prevent text wrap */
+  overflow: hidden; /* Hide overflow */
+  animation: auto-write 6s steps(40) infinite; /* Animation */
+}
+
+/* Keyframe animation */
+@keyframes auto-write {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
 section {
     margin: 40px 0;
 }
+/*.carousel{
+    background-color: #aa00ff;
+    position: relative;
+}*/
+.socialmed{
+position: absolute;
+bottom: 0;
+left: 250px;
+
+
+}
+.socialmed a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #aa00ff; /* Change color as needed */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Add animation on hover */
+.socialmed a:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+.socialmed .svg-inline--fa{
+    height: 50px;
+    color: white;
+}
+.carousel-item img {
+    margin-top: 50px                ;
+    border-radius: 100%;
+    border: 3px solid #e91e63;  
+    transition: border-color 0.3s ease; 
+
+}
+
+.carousel-item img:hover {
+    border-color: linear-gradient(to right, #ff7e5f, #feb47b); 
+}
+
 
 .card {
     border: none;
