@@ -76,6 +76,39 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+<<<<<<< HEAD
+    document.addEventListener("DOMContentLoaded", function() {
+    const stars = document.querySelectorAll('.star');
+    let userRating = 0; // Initialize user's rating
+
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            const rating = parseInt(this.getAttribute('data-rating'));
+
+            // Toggle the state of stars based on user's click
+            stars.forEach((s, index) => {
+                if (index < rating) {
+                    s.classList.add('selected');
+                } else {
+                    s.classList.remove('selected');
+                }
+            });
+
+            userRating = rating; // Update user's rating
+            console.log('User Rating:', userRating);
+            // You can implement further logic here, such as submitting the rating to a server
+        });
+    });
+});
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    // Your form submission logic goes here
+    event.preventDefault(); // Prevent default form submission
+    // You can use AJAX to submit form data or perform any other action
+});
+
+
+=======
+>>>>>>> b1afc516a878d9714a55380dcaef271c3568860d
 
 // Function to get the current year
 function getCurrentYear() {
