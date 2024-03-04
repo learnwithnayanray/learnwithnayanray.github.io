@@ -11,11 +11,11 @@ h1 {
   border-right: 2px solid black; /* Cursor style effect */
   white-space: nowrap; /* Prevent text wrap */
   overflow: hidden; /* Hide overflow */
-<<<<<<< HEAD
+
   animation: auto-write 9s steps(40) infinite; /* Animation */
-=======
+
   animation: auto-write 4s steps(40) infinite; /* Animation */
->>>>>>> b1afc516a878d9714a55380dcaef271c3568860d
+
 }
 
 /* Keyframe animation */
@@ -45,12 +45,12 @@ header {
 #slider {
     position: relative;
     overflow: hidden;
-<<<<<<< HEAD
+
     height: 150px; 
     line-height: 150px;
-=======
+
     height: 400px; /* Adjust height as needed */
->>>>>>> b1afc516a878d9714a55380dcaef271c3568860d
+
     background-size: cover;
     background-position: center;
     transition: background-image 0.5s ease;
@@ -89,17 +89,17 @@ section {
     position: relative;
 }*/
 .socialmed{
-position: absolute;
-bottom: 0;
-left: 250px;
+   width: 200px;
+   margin-right: auto;
+   margin-left: auto;
 
 
 }
 .socialmed a {
-    display: inline-block;
+/*    display: inline-block;*/
     margin: 0 10px;
     font-size: 24px;
-    color: #aa00ff; /* Change color as needed */
+    color: #ff00ff; /* Change color as needed */
     transition: transform 0.3s ease; /* Smooth transition */
 }
 
@@ -110,7 +110,9 @@ left: 250px;
 
 .socialmed .svg-inline--fa{
     height: 50px;
-    color: white;
+    color: #ff00ff;
+    align-items: center;
+
 }
 .carousel-item img {
     margin-top: 50px                ;
@@ -119,12 +121,11 @@ left: 250px;
     transition: border-color 0.3s ease; 
 
 }
-<<<<<<< HEAD
+
 .about-text{
 margin-top: 100px ;
 }
-=======
->>>>>>> b1afc516a878d9714a55380dcaef271c3568860d
+
 
 .carousel-item img:hover {
     border-color: linear-gradient(to right, #ff7e5f, #feb47b); 
@@ -226,12 +227,6 @@ margin-top: 100px ;
         width: 100%;
     }
 }
-
-
-footer {
-    background-color: #333;
-    color: #fff;
-}
 .custom-card-img {
     width: 150px;
     height: 150px;
@@ -324,4 +319,10 @@ footer {
 #map {
     height: 400px; /* Adjust height as needed */
     margin-top: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
 }

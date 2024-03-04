@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-<<<<<<< HEAD
+
     document.addEventListener("DOMContentLoaded", function() {
     const stars = document.querySelectorAll('.star');
     let userRating = 0; // Initialize user's rating
@@ -107,8 +107,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 });
 
 
-=======
->>>>>>> b1afc516a878d9714a55380dcaef271c3568860d
 
 // Function to get the current year
 function getCurrentYear() {
