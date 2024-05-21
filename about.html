@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfoli</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyCqO8f9U8h4fB5UZB/K5J8QO1SBQYUJ3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row main-sec">
+			<div class="col-4 navbar-var">
+
+					<button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+         <span class="sr-only">Open sidebar</span>
+         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+      </svg>
+      </button>
+
+     <aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-72 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidenav">
+
+      <div class="overflow-y-auto py-5 px-3 h-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+
+
+
+
+      <ul class="space-y-2">
+          <li>
+              <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <span><img src="assets/8.png" style="height: 40px; width: 40px; border: 1px solid black; border-radius: 50%;"></span>
+                  <span class="ml-3"><b>Nayan Ray</b></span>
+                  
+                  <div class="socialmed" id="smead">
+                        <a href="https://www.facebook.com/profile.php?id=100070119041420" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <!-- Add more social icons as needed -->
+                    </div>
+                    
+              </a>
+
+          </li>
+          
+          <li>
+              <button type="button" class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-pages" data-collapse-toggle="dropdown-pages">
+                  <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                  <span class="flex-1 ml-3 text-left whitespace-nowrap">Pages</span>
+                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+              <ul id="dropdown-pages" class="hidden py-2 space-y-2">
+                  <li>
+                      <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Settings</a>
+                  </li>
+                  <li>
+                      <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Kanban</a>
+                  </li>
+                  <li>
+                      <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Calendar</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <button type="button" class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-sales" data-collapse-toggle="dropdown-sales">
+                  <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
+                  <span class="flex-1 ml-3 text-left whitespace-nowrap">Sales</span>
+                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+              <ul id="dropdown-sales" class="hidden py-2 space-y-2">
+                      <li>
+                          <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</a>
+                      </li>
+                      <li>
+                          <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
+                      </li>
+                      <li>
+                          <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
+                      </li>
+              </ul>
+          </li>
+          <li>
+              <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path><path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
+                  <span class="flex-1 ml-3 whitespace-nowrap">Messages</span>
+                  <span class="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-100 dark:bg-primary-200 dark:text-primary-800">
+                      6   
+                  </span>
+              </a>
+          </li>
+          <li>
+              <button type="button" class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-authentication" data-collapse-toggle="dropdown-authentication">
+                  <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                  <span class="flex-1 ml-3 text-left whitespace-nowrap">Authentication</span>
+                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+              <ul id="dropdown-authentication" class="hidden py-2 space-y-2">
+                  <li>
+                      <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Sign In</a>
+                  </li>
+                  <li>
+                      <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Sign Up</a>
+                  </li>
+                  <li>
+                      <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Forgot Password</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+      <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
+          <li>
+              <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+                  <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
+                  <span class="ml-3">Docs</span>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+                  <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
+                  <span class="ml-3">Components</span>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+                  <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z" clip-rule="evenodd"></path></svg>
+                  <span class="ml-3">Help</span>
+              </a>
+          </li>
+      </ul>
+  </div>
+  <div class="hidden absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full lg:flex bg-white dark:bg-gray-800 z-20 border-r border-gray-200 dark:border-gray-700">
+      <a href="#" class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
+        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"></path></svg>
+      </a>
+      <a href="#" data-tooltip-target="tooltip-settings" class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
+        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+      </a>
+      <div id="tooltip-settings" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+        Settings page
+          <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+      <button type="button" data-dropdown-toggle="language-dropdown" class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer dark:hover:text-white dark:text-gray-400 hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
+        <svg aria-hidden="true" class="h-5 w-5 rounded-full mt-0.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900"><path fill="#b22234" d="M0 0h7410v3900H0z"/><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/><path fill="#3c3b6e" d="M0 0h2964v2100H0z"/><g fill="#fff"><g id="d"><g id="c"><g id="e"><g id="b"><path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/><use xlink:href="#a" y="420"/><use xlink:href="#a" y="840"/><use xlink:href="#a" y="1260"/></g><use xlink:href="#a" y="1680"/></g><use xlink:href="#b" x="247" y="210"/></g><use xlink:href="#c" x="494"/></g><use xlink:href="#d" x="988"/><use xlink:href="#c" x="1976"/><use xlink:href="#e" x="2470"/></g></svg>
+      </button>
+      <!-- Dropdown -->
+      <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700" id="language-dropdown">
+        <ul class="py-1" role="none">
+          <li>
+            <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:text-white dark:text-gray-300 dark:hover:bg-gray-600" role="menuitem">
+              <div class="inline-flex items-center">
+                <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512">
+                  <g fill-rule="evenodd">
+                    <g stroke-width="1pt">
+                      <path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/>
+                      <path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/>
+                    </g>
+                    <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/>
+                    <path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/>
+                  </g>
+                </svg>              
+                English (US)
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
+              <div class="inline-flex items-center">
+                <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512">
+                  <path fill="#ffce00" d="M0 341.3h512V512H0z"/>
+                  <path d="M0 0h512v170.7H0z"/>
+                  <path fill="#d00" d="M0 170.7h512v170.6H0z"/>
+                </svg>
+                Deutsch
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
+              <div class="inline-flex items-center">
+                <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512">
+                  <g fill-rule="evenodd" stroke-width="1pt">
+                    <path fill="#fff" d="M0 0h512v512H0z"/>
+                    <path fill="#009246" d="M0 0h170.7v512H0z"/>
+                    <path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/>
+                  </g>
+                </svg>              
+                Italiano
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:text-white dark:text-gray-300 dark:hover:bg-gray-600" role="menuitem">
+              <div class="inline-flex items-center">
+                <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
+                  <defs>
+                    <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/>
+                  </defs>
+                  <path fill="#de2910" d="M0 0h512v512H0z"/>
+                  <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/>
+                  <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/>
+                  <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/>
+                  <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/>
+                  <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/>
+                </svg>
+                中文 (繁體)
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+</aside>
+</div>
+			<div class="col-8 leftsec">
+				 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Nayan Ray</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#slider">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#client-reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#total-projects">Total Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+				 <!-- Header Section -->
+    <header id="slider" class="text-center">
+        <h1>Hello i Am - Web developer & Wordpress Experts</h1>
+        <!-- Add your slider content here using JavaScript -->
+    </header>
+   <div class="container-fluid">
+<!--     <center><h1>About Us</h1></center> -->
+        <div class="row">
+            <!-- Left side with carousel -->
+            <div class="col-lg-6">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel ">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/8.png" class="d-block w-50 h-50 ml-auto mr-auto" alt="Carousel Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/8.png" class="d-block w-50 h-50" alt="Carousel Image 2">
+                        </div>
+                         
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <div class="socialmed" id="smead">
+                        <a href="https://www.facebook.com/profile.php?id=100070119041420" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <!-- Add more social icons as needed -->
+                    </div>
+                </div>
+            </div>
+            <!-- Right side with text and information -->
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <span></span>
+                    <h3>Hello I am Nayan Ray</h3>
+                    <p>I am a web developer with several years of experience in designing and developing websites and web applications.I have worked on various projects ranging from simple landing pages to complex web applications, and I am passionate about creating user-friendly and visually appealing websites.</p>
+                    <!-- Add more content as needed -->
+                    <div class="downcv">
+   <a href="https://github.com/learnwithnayanray/learnwithnayanray.github.io/blob/main/assets/Nayan%20Kumar%20Ray.pdf" download="Nayan Kumar Ray.pdf" target="_blank"><button id="downloadButton" class="btn btn-success">Download CV</button></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <section id="services" class="text-center bg-light py-5">
+        <h2>Services</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/047e078e1b.jpg" alt="Web Development Image" class="card-img-top">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Crafting robust and scalable websites tailored to your needs.</p>
+                            <span><button class="btn btn-secondary">Visit Now</button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/Untitled-1.png" alt="Web Development Image" class="card-img-top">
+                            <h5 class="card-title">Responsive Design</h5>
+                            <p class="card-text">Ensuring your website looks great on devices of all sizes.</p>
+                            <span><button class="btn btn-secondary">Visit Now</button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/006cd34b96.jpg" alt="Web Development Image" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Solutions</h5>
+                            <p class="card-text">Building tailored solutions to meet your unique business requirements.</p>
+                            <span><button class="btn btn-secondary">Visit Now</button></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/de75fe922e.jpg" alt="Web Development Image" class="card-img-top">
+                            <h5 class="card-title">Werdpress Website</h5>
+                            <p class="card-text">Crafting robust and scalable websites tailored to your needs.</p>
+                            <span><button class="btn btn-secondary">Visit Now</button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/1b7c8c3e78.jpg" alt="Web Development Image" class="card-img-top">
+                            <h5 class="card-title">E-Commerce</h5>
+                            <p class="card-text">Ensuring your website looks great on devices of all sizes.</p>
+                            <span><button class="btn btn-secondary">Visit Now</button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/3b683a055c.jpg" alt="Web Development Image" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">SEO & Speed Optimization</h5>
+                            <p class="card-text">Building tailored solutions to meet your unique business requirements.</p>
+                            <span><button class="btn btn-secondary">Visit Now</button></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <!-- Add your project details here -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img src="assets/Untitled-1.png" alt="Web Development Image" class="card-img-top">
+                           <h5 class="card-title">Portfolio Landing</h5>   
+                            <p class="card-text">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="https://learnwithnayanray.github.io/" target="_blank"><span><button class="btn btn-danger">Visit Now</button></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img src="assets/612660a63a.jpg" alt="Web Development Image" class="card-img-top">
+                            <h5 class="card-title">Wp Tools Online</h5>
+                            <p class="card-text">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                             <a href="https://sociends.com/" target="_blank"><span><button class="btn btn-danger">Visit Now</button></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img src="assets/30a17830ba.jpg" alt="Web Development Image" class="card-img-top">
+                          <h5 class="card-title">The Social Friends</h5> 
+                            <p class="card-text">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="https://sociends.com/" target="_blank"><span><button class="btn btn-danger">Visit Now</button></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img src="assets/9c03fe6a5e.jpg" alt="Web Development Image" class="card-img-top">
+                            <h5 class="card-title">Best Newspaper</h5>
+                            <p class="card-text">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                             <a href="https://sociends.com/" target="_blank"><span><button class="btn btn-danger">Visit Now</button></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Pricing Table Section -->
+    <section id="pricing" class="text-center bg-light py-5">
+    <div class="container">
+        <h2>Pricing</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Basic</h5>
+                    <p class="card-text">Starter Website, Standard Features</p>
+                    <p class="card-text"><strong>$100</strong></p>
+                    <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="additional-option">
+            <label class="form-check-label" for="additional-option">
+                Additional Option (+$50)
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="additional-option">
+            <label class="form-check-label" for="additional-option">
+                Additional Option (+$50)
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="additional-option">
+            <label class="form-check-label" for="additional-option">
+                Additional Option (+$50)
+            </label>
+        </div>
+                    <button class="btn btn-primary add-to-cart" data-package="Basic" value="100$">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Standard</h5>
+                    <p class="card-text">Responsive Design, Advanced Features</p>
+                    <p class="card-text"><strong>$200</strong></p>
+                    <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="additional-option">
+            <label class="form-check-label" for="additional-option">
+                Additional Option (+$50)
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="additional-option">
+            <label class="form-check-label" for="additional-option">
+                Additional Option (+$50)
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="additional-option">
+            <label class="form-check-label" for="additional-option">
+                Additional Option (+$50)
+            </label>
+        </div>  
+                    <button class="btn btn-primary add-to-cart" data-package="Standard" value="200$">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Premium</h5>
+                    <p class="card-text">Custom Solutions, E-commerce Integration</p>
+                    <p class="card-text"><strong>$400</strong></p>
+                    <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="additional-option">
+            <label class="form-check-label" for="additional-option">
+                Additional Option (+$50)
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="additional-option">
+            <label class="form-check-label" for="additional-option">
+                Additional Option (+$50)
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="additional-option">
+            <label class="form-check-label" for="additional-option">
+                Additional Option (+$50)
+            </label>
+        </div>  
+                    <button class="btn btn-primary add-to-cart" data-package="Premium" value="300$">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Client Reviews Section -->
+     <section id="client-reviews" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Client Reviews</h2>
+            <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-4">
+                                    <div class="card-body text-center">
+                                        <img src="assets/f.png" alt="Web Development Image"
+                                            class="card-img-top custom-card-img h-50">
+                                        <p class="card-text">"Great work! The website looks amazing and functions
+                                            perfectly. Highly recommended."</p>
+                                            <div class="rating">
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+            </div>
+                                        <p class="card-text">- Mr James</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-4">
+                                    <div class="card-body text-center">
+                                        <img src="assets/f.png" alt="Web Development Image"
+                                            class="card-img-top custom-card-img h-50">
+                                        <p class="card-text">"Very professional and efficient. Exceeded our
+                                            expectations. Will definitely work with again."</p>
+                                            <div class="rating">
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+            </div>
+                                        <p class="card-text">Mark</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more carousel items as needed -->
+                </div>
+                <a class="carousel-control-prev" href="#reviewCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#reviewCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+  <section>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/e133798f7b.jpg" class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Design</h5>
+                        <p class="card-text limited-content">"In today's digital age, where people access the internet from a myriad of devices, responsive web design has become a crucial aspect of creating successful websites. With the proliferation of smartphones, tablets, laptops, and even smartwatches, users expect websites to adapt seamlessly to their device's screen size and orientation."</p>   
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/047e078e1b.jpg" class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text limited-content">"In today's digital age, where people access the internet from a myriad of devices, responsive web design has become a crucial aspect of creating successful websites. With the proliferation of smartphones, tablets, laptops, and even smartwatches, users expect websites to adapt seamlessly to their device's screen size and orientation."</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/45b0ff2c5c.jpg" class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">SEO & SPEED</h5>
+                        <p class="card-text limited-content">"In today's digital age, where people access the internet from a myriad of devices, responsive web design has become a crucial aspect of creating successful websites. With the proliferation of smartphones, tablets, laptops, and even smartwatches, users expect websites to adapt seamlessly to their device's screen size and orientation."</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more blog posts as needed -->
+        </div>
+    
+</section>
+
+<section>
+    <div class="row ">
+        
+    <div class="col-md-4">
+    <div class="skill">
+        <div class="skill-name">HTML5</div>
+        <div class="progress">
+        <div class="progress-bar" style="width: 99%;"></div>
+    </div>
+</div>
+
+<div class="skill">
+    <div class="skill-name">CSS3</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 95%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">Java Script</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 90%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">BootStrap</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 95%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">PHP</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 85%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">SQL</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 85%;"></div>
+    </div>
+</div>
+
+<!-- Add more skills as needed -->
+
+</div>
+ <div class="col-md-4" id="skill-word">
+      <div class="skill">
+        <div class="skill-name">Wordpress Developer</div>
+        <div class="progress">
+        <div class="progress-bar" style="width: 99%;"></div>
+    </div>
+</div>
+
+<div class="skill">
+    <div class="skill-name">Wp Theme Development Experts</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 95%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">Wp Plugins Development Experts</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 90%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">Divi Builder Experts</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 95%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">Elementor Pro Builder Experts</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 85%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">Kadence Builder Experts</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 85%;"></div>
+    </div>
+</div>
+ </div>
+
+        <div class="col-md-4" id="skill-seo">
+             <div class="skill">
+        <div class="skill-name">Wordpress Developer</div>
+        <div class="progress">
+        <div class="progress-bar" style="width: 99%;"></div>
+    </div>
+</div>
+
+<div class="skill">
+    <div class="skill-name">Wp Theme Development Experts</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 95%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">Wp Plugins Development Experts</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 90%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">Divi Builder Experts</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 95%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">Elementor Pro Builder Experts</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 85%;"></div>
+    </div>
+</div>
+<div class="skill">
+    <div class="skill-name">Kadence Builder Experts</div>
+    <div class="progress">
+        <div class="progress-bar" style="width: 85%;"></div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+<section class="bg-light ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card1">
+                    <img src="assets/fi.png" alt="Fiverr Profile Screenshot">
+                 <div class="card-content">
+                    <h2>Fiverr Profile</h2>
+                        <p>Check out my services on Fiverr!</p>
+                        <a href="https://www.fiverr.com/users/wp_nayanray/" class="btn" target="_blank">Visit Profile</a>
+                </div>
+            </div>
+            </div>
+   
+                
+            <div class="col-md-4" id="contact">
+                 <form id="contactForm">
+                <!-- Your contact form fields here -->
+                <input type="text" placeholder="Name" name="name"><br>
+                <input type="email" placeholder="Email" name="email">
+                <br>
+                <textarea placeholder="Message" name="message"></textarea><br>
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+               
+            <div class="col-md-4">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> SHSTP Jessore, Jessore, Bangladesh</p>
+                    <p><i class="fas fa-phone"></i> +8801 981 308611</p>
+                    <p><i class="fas fa-envelope"></i> info@nayan.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+   <footer class="text-center py-3" id="footer">
+        <p>&copy; <span id="currentYear"></span> Nayan Ray - Web Developer</p>
+    </footer>
+
+
+    
+			</div>
+
+		</div>
+
+	</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+<!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyCqO8f9U8h4fB5UZB/K5J8QO1SBQYUJ3"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyCqO8f9U8h4fB5UZB/K5J8QO1SBQYUJ3"
+        crossorigin="anonymous"></script>
+
+     <script src="main.js"></script>
+     <script src="checkout.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
